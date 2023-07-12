@@ -8,8 +8,6 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
@@ -37,6 +35,11 @@
                         </a>
                     </li>
                     <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="bx bxs-graduation"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#skills" class="nav__link">
                             <i class="bx bx-book"></i>
                         </a>
@@ -54,6 +57,8 @@
                     <li class="nav__item"></li>
                 </ul>
             </div>
+            <!--Theme change button-->
+            <i class="bx bx-moon change-theme" id="theme-button"></i>
         </nav>
     </header>
 
@@ -69,7 +74,7 @@
                 </div>
                 <div class="home__buttons">
                     <a href="./assets/pdf/Ansel-Cv.pdf" class="button button--ghost">Télécharger mon CV</a>
-                    <a href="#about" class="button">About me</a>
+                    <a href="#about" class="button"> À propos de moi</a>
                 </div>
                 <div class="home__handle">
                     <img src="./assets/img/profil.png" alt="" class="home__img">
@@ -126,7 +131,7 @@
 
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification__section">
+        <section class="qualification__section" id="qualification">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">Mon parcours personnel</span>
 
@@ -378,66 +383,78 @@
             <h2 class="section__title">Mes projets récents</h2>
 
             <div class="work__filters">
-                <span class="work__item" data-filter="all">Tout</span>
-                <span class="work__item" data-filter="web">Frontend</span>
-                <span class="work__item" data-filter="mobile">Backend</span>
-                <span class="work__item" data-filter="design">SEO</span>
+                <span class="work__item active-work" data-filter="all">Tout</span>
+                <span class="work__item" data-filter=".frontend">Frontend</span>
+                <span class="work__item" data-filter=".backend">Backend</span>
+                <span class="work__item" data-filter=".seo">SEO</span>
             </div>
             <div class="work__container container grid">
-                <div class="work__card mix web">
+                <div class="work__card mix frontend">
                     <img src="./assets/img/booki.png" class="work__img" alt="">
-                    <h3 class="work__title">Web Design</h3>
-                    <a href="#" class="work__button">
+                    <h3 class="work__title">Booki | HTML/CSS</h3>
+                    <a href="https://dgarance.github.io/Projet-2/" class="work__button">
                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
                     </a>
+                    <a href="https://github.com/DGarance/Projet-2" class="work__button"> Code <i
+                            class="bx bx-code-alt work__icon"></i> </a>
                 </div>
-                <div class="work__card mix web">
+                <div class="work__card mix frontend">
                     <img src="./assets/img/ohmyfood.png" class="work__img" alt="">
-                    <h3 class="work__title">Web Design</h3>
-                    <a href="#" class="work__button">
+                    <h3 class="work__title">OhMyFood | HTML/Sass</h3>
+                    <a href="https://dgarance.github.io/Projet-3/" class="work__button">
                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
                     </a>
+                    <a href="https://github.com/DGarance/Projet-3" class="work__button"> Code <i
+                            class="bx bx-code-alt work__icon"></i> </a>
                 </div>
-                <div class="work__card mix web">
+                <div class="work__card mix seo">
                     <img src="./assets/img/lapanthere.png" class="work__img" alt="">
-                    <h3 class="work__title">Web Design</h3>
+                    <h3 class="work__title">La Panthère | SEO</h3>
                     <a href="#" class="work__button">
                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
                     </a>
+                    <a href="https://github.com/DGarance/Projet-4" class="work__button"> Code <i
+                            class="bx bx-code-alt work__icon"></i> </a>
                 </div>
-                <div class="work__card mix web">
+                <div class="work__card mix backend">
                     <img src="./assets/img/kanap.png" class="work__img" alt="">
-                    <h3 class="work__title">Web Design</h3>
+                    <h3 class="work__title">Kanap | Javascript</h3>
                     <a href="#" class="work__button">
                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
                     </a>
+                    <a href="https://github.com/DGarance/Projet-5" class="work__button"> Code <i
+                            class="bx bx-code-alt work__icon"></i> </a>
                 </div>
-                <div class="work__card mix web">
+                <div class="work__card mix backend">
                     <img src="./assets/img/piiquante.png" class="work__img" alt="">
-                    <h3 class="work__title">Web Design</h3>
+                    <h3 class="work__title">Piiquante | NodeJS/Express/MongoDB</h3>
                     <a href="#" class="work__button">
                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
                     </a>
+                    <a href="https://github.com/DGarance/Projet-6" class="work__button"> Code <i
+                            class="bx bx-code-alt work__icon"></i> </a>
                 </div>
-                <div class="work__card mix web">
+                <div class="work__card mix frontend">
                     <img src="./assets/img/Kasa.png" class="work__img" alt="">
-                    <h3 class="work__title">Web Design</h3>
+                    <h3 class="work__title">Kasa | React</h3>
                     <a href="#" class="work__button">
                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
                     </a>
+                    <a href="https://github.com/DGarance/Projet-7" class="work__button"> Code <i
+                            class="bx bx-code-alt work__icon"></i> </a>
                 </div>
             </div>
         </section>
 
         <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
-            <span class="section__subtitle">Get in touch</span>
-            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Prenons contact</span>
+            <h2 class="section__title">Contactez-moi</h2>
 
             <div class="contact__container container grid">
 
                 <div class="contact__content">
-                    <h3 class="contact__title">Talk to me</h3>
+                    <h3 class="contact__title">Dites moi tout !</h3>
 
                     <div class="contact__info">
 
@@ -474,7 +491,7 @@
                                 class="contact__form-input"></textarea>
                         </div>
 
-                        <button class="button">Envoyer un message</button>
+                        <button class="button" id="send-button" value="submit">Envoyer un message</button>
                     </form>
                 </div>
 
@@ -503,9 +520,6 @@
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="./assets/js/scrollreveal.min.js"></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== MIXITUP FILTER ===============-->
     <script src="./assets/js/mixitup.min.js"></script>
